@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Biodata Kelas I</title>
+</head>
+<body>
+
+<h2>Form Biodata Kelas I</h2>
+
+<form action="/action_page.php">
+    <label for="name">Nama Lengkap:</label><br>
+    <input type="text" id="name" name="name" placeholder="Rafael Struick"><br>
+
+    <label for="bday">Tanggal Lahir:</label><br>
+    <input type="date" id="bday" name="bday"><br>
+
+    <label for="notelp">Nomor Telepon:</label><br>
+    <input type="text" id="notelp" name="notelp" placeholder="08XXXXXXXXXX"><br>
+
+    <label for="agama">Agama:</label><br>
+    <select id="agama" name="agama">
+        <option value="Islam">Islam</option>
+        <option value="Kristen">Kristen</option>
+        <option value="Katolik">Katolik</option>
+        <option value="Hindu">Hindu</option>
+        <option value="Buddha">Buddha</option>
+        <option value="Konghucu">Konghucu</option>
+        <option value="Kepercayaan Lainnya">Kepercayaan Lainnya</option>
+    </select><br>
+
+    <label for="provinsi">Provinsi:</label><br>
+    <select id="provinsi" name="provinsi">
+        <!-- Opsi provinsi akan dimuat melalui JavaScript -->
+    </select><br>
+
+    <label for="kota">Kabupaten/Kota:</label><br>
+    <select id="kota" name="kota">
+        <!-- Opsi kabupaten/kota akan dimuat melalui JavaScript -->
+    </select><br>
+
+    <label for="sekolah">Asal Sekolah Dulu:</label><br>
+    <input type="radio" id="sma" name="sekolah" value="HTML">
+    <label for="html">SMA</label><br>
+    <input type="radio" id="smk" name="sekolah" value="CSS">
+    <label for="css">SMK</label><br>
+    <input type="radio" id="man" name="sekolah" value="JavaScript">
+    <label for="javascript">MAN</label> <br>
+
+    <label for="hobi">Hobi:</label><br>
+    <input type="text" id="hobi" name="hobi" placeholder="Berenang"><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="rstruick@gmail.com"><br>
+
+    <input type="submit" value="Submit"> <input type="reset" value="Reset">
+</form> 
+
