@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nabil's Profile - Biodata</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* The hero image */
+        .hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("mbappeeee.jpeg");
+            height: calc(100%); /* Adjust height to fill the screen minus the top-bar height */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        /* Place text in the middle of the image */
+        .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+
+        .hero-text button {
+            background-color: rgb(165, 165, 129);
+            color: azure;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .hero-text button:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .profile-info h2 {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+        p {
+            color:azure;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById("myButton").onclick = function() {
+                window.location.href = "personal-bio.html";
+            };
+        };
+    </script>
+</head>
+
+<body>
+    <div class="top-bar">
+        <a href="biodata.html">Home</a> | <a href="personal-bio.html">Profile</a> | <a href="class-bio.html">Class Biodata</a> | <a href="form.html">Form</a>
+    </div>
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>Hello, I'm Nabil 👋</h1>
+            <p>I'm a first-year informatics student passionate about all things computer science and tech.👨🏼‍💻</p>
+            <button id="myButton">My Profile</button>
+        </div>
+    </div> 
+</body>
+
+</html>

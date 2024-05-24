@@ -1,56 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Biodata Kelas I</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js">
+    </script>
 </head>
+
 <body>
+    <div class="top-bar">
+        <a href="biodata.html">Home</a> | <a href="personal-bio.html">Profile</a> | <a href="class-bio.html">Class Biodata</a> | <a href="form.html">Form</a>
+    </div>
 
-<h2>Form Biodata Kelas I</h2>
+    <h2 style="text-align: center; color: #333333; margin-top: 20px;">Form Biodata Kelas I</h2>
 
-<form action="/action_page.php">
-    <label for="name">Nama Lengkap:</label><br>
-    <input type="text" id="name" name="name" placeholder="Rafael Struick"><br>
+    <form name="biodataForm" action="/action_page.php" onsubmit="return validateForm()">
+        <div class="form-group">
+            <label for="name">Nama Lengkap:</label>
+            <input type="text" id="name" name="name" placeholder="Rafael Struick">
+        </div>
 
-    <label for="bday">Tanggal Lahir:</label><br>
-    <input type="date" id="bday" name="bday"><br>
+        <div class="form-group">
+            <label for="bday">Tanggal Lahir:</label>
+            <input type="date" id="bday" name="bday">
+        </div>
 
-    <label for="notelp">Nomor Telepon:</label><br>
-    <input type="text" id="notelp" name="notelp" placeholder="08XXXXXXXXXX"><br>
+        <div class="form-group">
+            <label for="notelp">Nomor Telepon:</label>
+            <input type="text" id="notelp" name="notelp" placeholder="08XXXXXXXXXX">
+        </div>
 
-    <label for="agama">Agama:</label><br>
-    <select id="agama" name="agama">
-        <option value="Islam">Islam</option>
-        <option value="Kristen">Kristen</option>
-        <option value="Katolik">Katolik</option>
-        <option value="Hindu">Hindu</option>
-        <option value="Buddha">Buddha</option>
-        <option value="Konghucu">Konghucu</option>
-        <option value="Kepercayaan Lainnya">Kepercayaan Lainnya</option>
-    </select><br>
+        <div class="form-group">
+            <label for="agama">Agama:</label>
+            <select id="agama" name="agama">
+                <option value="">Pilih Agama</option>
+                <option value="Islam">Islam</option>
+                <option value="Kristen">Kristen</option>
+                <option value="Katolik">Katolik</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Buddha">Buddha</option>
+                <option value="Konghucu">Konghucu</option>
+                <option value="Kepercayaan Lainnya">Kepercayaan Lainnya</option>
+            </select>
+        </div>
 
-    <label for="provinsi">Provinsi:</label><br>
-    <select id="provinsi" name="provinsi">
-        <!-- Opsi provinsi akan dimuat melalui JavaScript -->
-    </select><br>
+        <div class="form-group">
+            <label for="kota">Asal Kota:</label>
+            <input type="text" id="kota" name="kota" placeholder="Magelang">
+        </div>
 
-    <label for="kota">Kabupaten/Kota:</label><br>
-    <select id="kota" name="kota">
-        <!-- Opsi kabupaten/kota akan dimuat melalui JavaScript -->
-    </select><br>
+        <label for="sekolah">Asal Sekolah Dulu:</label>
+        <div class="horizontal-group">
+            <input type="radio" id="sma" name="sekolah" value="SMA">
+            <label for="sma">SMA</label>
+            <input type="radio" id="smk" name="sekolah" value="SMK">
+            <label for="smk">SMK</label>
+            <input type="radio" id="man" name="sekolah" value="MAN">
+            <label for="man">MAN</label>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="hobi">Hobi:</label>
+            <input type="text" id="hobi" name="hobi" placeholder="Berenang">
+        </div>
 
-    <label for="sekolah">Asal Sekolah Dulu:</label><br>
-    <input type="radio" id="sma" name="sekolah" value="HTML">
-    <label for="html">SMA</label><br>
-    <input type="radio" id="smk" name="sekolah" value="CSS">
-    <label for="css">SMK</label><br>
-    <input type="radio" id="man" name="sekolah" value="JavaScript">
-    <label for="javascript">MAN</label> <br>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="rstruick@gmail.com">
+        </div>
 
-    <label for="hobi">Hobi:</label><br>
-    <input type="text" id="hobi" name="hobi" placeholder="Berenang"><br>
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" placeholder="rstruick@gmail.com"><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
 
-    <input type="submit" value="Submit"> <input type="reset" value="Reset">
-</form> 
-
+</html>
